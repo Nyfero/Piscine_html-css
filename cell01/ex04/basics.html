@@ -1,21 +1,54 @@
 <!DOCTYPE html>
-<html>
-	<title>Basics</title>
-	<body style="background-color:Pink;">
-		<center>
-		<h1 style="color:White;">Hello World !</h1>
-		</center>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="parallax.css" />
+		<title>Basics</title>
+		<style>
+			body {
+				background-color: Pink;
+			}
+			
+			h1 {
+				text-align: center;
+				color: white;
+			}
+			
+			hr {
+				width: 100%;
+				size: 5;
+				color: black;
+			}
+			
+			p {
+				text-align: right;
+				font-style: italic;
+				font-family: monospace;
+			}
+			
+			.row {
+				display: flex;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Hello World !</h1>
 		<div class="row">
-			<div class="column">
+			<figure>
 				<img src="https://marketplace.cdiscount.com/wp-content/uploads/2020/06/french-days-cdiscount.jpg" alt="Cdiscount" height="150">
+				<figcaption>
+					<a href="https://www.cdiscount.com/">https://www.cdiscount.com/</a>
+				</figcaption>
+			</figure>
+			<figure>
 				<img src="https://mms.businesswire.com/media/20210308005779/en/863582/23/Wish_Logo.jpg" alt="Wish" height="150">
-			</div>
-			<div class="column">
-				<a href="https://www.cdiscount.com/">https://www.cdiscount.com/</a>
-				<a href="https://www.wish.com/">https://www.wish.com/</a>
-			</div>
+				<figcaption>
+					<a href="https://www.wish.com/">https://www.wish.com/</a>
+				</figcaption>
+			</figure>
 		</div>
-		<hr style="width:100%", size="5", color=black>
-		<p align="right"><i><tt>©gsap2022</tt></i></p>
+		<hr>
+		<p>©gsap2022</p>
 	</body>
 </html>

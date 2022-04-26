@@ -1,39 +1,32 @@
-.wrapper {
-  height: 100vh;
-  overflow-x: hidden;
-  overflow-y: auto;
-  perspective: 2px;
+body, html {
+	height: 100%;
 }
 
-.section {
-  position: relative;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  text-shadow: 0 0 5px #000;
+.parallax1 {
+	background-image: url('https://media.robertsspaceindustries.com/a2g2ta0lq0uq5/source.jpg');
+	height: 100%;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
 }
 
-.parallax::after {
-  content: " ";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  transform: translateZ(-1px) scale(1.5);
-  background-size: 100%;
-  z-index: -1;
+.mid {
+	background-color: black;
+	height: 100%;
 }
 
-.static {
-  background: red;
-}
-.bg1::after {
-  background-image: url('https://placekitten.com/g/900/700');
+.parallax2 {
+	background-image: url('https://starcitizen.tools/images/thumb/c/cc/C2_Feature_Style_clouds.jpg/400px-C2_Feature_Style_clouds.jpg');
+	height: 100%;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
 }
 
-.bg2::after {
-  background-image: url('https://placekitten.com/g/800/600');
+p {
+	position: relative;
+	text-align: center;
+	top: 50%;
+	bottom: 50%;
+	color:white;
 }
