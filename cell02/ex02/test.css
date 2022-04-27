@@ -1,58 +1,38 @@
-body {
-	font-size: 16px;
-	margin: 0;
-	color: #000;
-}
-
-img {
+body, html {
 	height: 100%;
-}
-
-.wrapper_outer {
-	height: 100vh;
-	width: 100vw;
-	overflow: hidden;
-}
-
-.wrapper {
-	height: 100%;
-	overflow-x: hidden;
-
 	perspective: 1px;
+	margin: 0;
 }
 
-.parallax {
-	box-sizing: border-box;
-	height: 100vh;
-	/* padding: 10vh 10vh; */
-	/* position: relative; */
-	width: 100vw;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	/* z-index: 1; */
-
-	overflow: hidden;
-
-	transform-style: preserve-3d;
-}
-
-.img {
-	position: absolute;
-	/* background-size: cover; */
-	/* background-position: center; */
-	z-index: -1;
+.parallax1 {
+	background-image: url('https://media.robertsspaceindustries.com/a2g2ta0lq0uq5/source.jpg');
 	height: 100%;
-	/* overflow: hidden; */
-
-	transform: translate3d(0,0,-1px) scale(2);
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	overflow: hidden;
 }
 
-h2 {
-	color: #fff;
-	margin: 0 0 10px;
-	font-size: 120px;
-	text-shadow: 2px 2px 2px rgba(0,0,0,0.4);
+.mid {
+	background-color: black;
+	height: 100%;
+	overflow: hidden;
+}
+
+.parallax2 {
+	background-image: url('https://starcitizen.tools/images/thumb/c/cc/C2_Feature_Style_clouds.jpg/400px-C2_Feature_Style_clouds.jpg');
+	height: 100%;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	overflow: hidden;
+}
+
+p {
+	font-size: 64px;
+	position: relative;
 	text-align: center;
-	text-transform: uppercase;
+	top: 50%;
+	bottom: 50%;
+	color:white;
 }

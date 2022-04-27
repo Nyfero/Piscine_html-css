@@ -1,38 +1,48 @@
-body, html {
-	height: 100%;
-	perspective: 1px;
+body {
+	font-size: 16px;
 	margin: 0;
+	color: #000;
 }
 
-.parallax1 {
-	background-image: url('https://media.robertsspaceindustries.com/a2g2ta0lq0uq5/source.jpg');
+img {
 	height: 100%;
-	background-attachment: fixed;
-	background-position: center;
-	background-size: cover;
+}
+
+.wrapper_outer {
+	height: 100vh;
+	width: 100vw;
 	overflow: hidden;
 }
 
-.mid {
-	background-color: black;
+.wrapper {
 	height: 100%;
-	overflow: hidden;
+	overflow-x: hidden;
+	perspective: 1px;
 }
 
-.parallax2 {
-	background-image: url('https://starcitizen.tools/images/thumb/c/cc/C2_Feature_Style_clouds.jpg/400px-C2_Feature_Style_clouds.jpg');
-	height: 100%;
-	background-attachment: fixed;
-	background-position: center;
-	background-size: cover;
+.parallax {
+	box-sizing: border-box;
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	overflow: hidden;
+	transform-style: preserve-3d;
 }
 
-p {
-	font-size: 64px;
-	position: relative;
+.img {
+	position: absolute;
+	z-index: -1;
+	height: 100%;
+	transform: translate3d(0,0,-1px) scale(2);
+}
+
+h2 {
+	color: #fff;
+	margin: 0 0 10px;
+	font-size: 120px;
+	text-shadow: 2px 2px 2px rgba(0,0,0,0.4);
 	text-align: center;
-	top: 50%;
-	bottom: 50%;
-	color:white;
+	text-transform: uppercase;
 }
