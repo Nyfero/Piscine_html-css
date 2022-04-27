@@ -1,5 +1,7 @@
 body, html {
 	height: 100%;
+	perspective: 1px;
+	margin: 0;
 }
 
 .parallax1 {
@@ -8,11 +10,13 @@ body, html {
 	background-attachment: fixed;
 	background-position: center;
 	background-size: cover;
+	overflow: hidden;
 }
 
 .mid {
 	background-color: black;
 	height: 100%;
+	overflow: hidden;
 }
 
 .parallax2 {
@@ -21,9 +25,11 @@ body, html {
 	background-attachment: fixed;
 	background-position: center;
 	background-size: cover;
+	overflow: hidden;
 }
 
 p {
+	font-size: 64px;
 	position: relative;
 	text-align: center;
 	top: 50%;
