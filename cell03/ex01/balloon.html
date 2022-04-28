@@ -11,10 +11,6 @@
 				background-color: red;
 				border-radius: 50%;
 			}
-			
-			.balloon:hover {
-				background-color: Pink;
-			}
 		</style>
 	</head>
 	<body>
@@ -22,14 +18,44 @@
 		</div>
 	</body>
 	<script>
-		function getR()
-		{
-			return Math.floor(Math.random() * (256));
+		var b = document.getElementsByClassName("balloon")[0];
+		var size = 200;
+		var color = 0;
+		
+		b.onclick = function() { 
+			if (size < 420)
+				size = size + 10;
+			else
+				size = 200;
+			b.style.height = size + 'px' ;
+			b.style.width = size + 'px';
+			if (color == 0)
+				b.style.backgroundColor = 'red';
+			else if (color == 1)
+				b.style.backgroundColor = 'green';
+			else
+				b.style.backgroundColor = 'blue';
+			color += 1;
+			if (color > 2)
+				color = 0;
 		}
 		
-		function myFunc()
-		{
-			document.body.style.backgroundColor = 'rgb(' + getR() + ',' + getR() + ',' + getR() + ')';
+		b.onmouseleave = function() {
+			console.log(size)
+			if (size > 200)
+				size -= 5;
+			b.style.width = size + 'px';
+			b.style.height = size + 'px';
+			if (color == 0)
+				b.style.backgroundColor = 'red';
+			else if (color == 1)
+				b.style.backgroundColor = 'green';
+			else
+				b.style.backgroundColor = 'blue';
+			color -= 1;
+			if (color < 0)
+				color = 2;
 		}
+		
 	</script>
 </html>
