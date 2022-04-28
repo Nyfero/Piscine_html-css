@@ -27,6 +27,7 @@
 				size = size + 10;
 			else
 				size = 200;
+			console.log(size)
 			b.style.height = size + 'px' ;
 			b.style.width = size + 'px';
 			if (color == 0)
@@ -41,11 +42,11 @@
 		}
 		
 		b.onmouseleave = function() {
-			console.log(size)
 			if (size > 200)
 				size -= 5;
 			b.style.width = size + 'px';
 			b.style.height = size + 'px';
+			console.log(size)
 			if (color == 0)
 				b.style.backgroundColor = 'red';
 			else if (color == 1)
