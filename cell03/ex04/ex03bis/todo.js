@@ -1,4 +1,4 @@
-var list = document.getElementsByClassName("ft_list")[0];
+var list = $("#ft_list");
 
 function create_todo() {
 	console.log(document.cookie);
@@ -17,7 +17,7 @@ function create_todo() {
 		document.cookie = encodeURIComponent(list.innerHTML);
 	}
 	else
-		create_todo()
+		create_todo();
 }
 
 list.innerHTML = decodeURIComponent(document.cookie);

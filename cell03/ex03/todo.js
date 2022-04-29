@@ -1,4 +1,4 @@
-var list = document.getElementsByClassName("ft_list")[0];
+var list = document.getElementById("ft_list");
 
 function create_todo() {
 	console.log(document.cookie);
