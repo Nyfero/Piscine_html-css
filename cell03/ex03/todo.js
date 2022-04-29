@@ -21,3 +21,9 @@ function create_todo() {
 }
 
 list.innerHTML = decodeURIComponent(document.cookie);
+for (let i = 0; i < list.children.length; i++) {
+	list.children[i].onclick = function() {
+		list.children[i].remove();
+	document.cookie = encodeURIComponent(list.innerHTML);
+	}
+}
