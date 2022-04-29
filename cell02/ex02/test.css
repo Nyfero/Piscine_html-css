@@ -1,10 +1,11 @@
 body, html {
 	height: 100%;
+	padding: 0%;
 	margin: 0;
 }
 
 .parallax1 {
-	background-image: url('https://media.robertsspaceindustries.com/a2g2ta0lq0uq5/source.jpg');
+	background: url('https://media.robertsspaceindustries.com/a2g2ta0lq0uq5/source.jpg') repeat fixed 100%;
 	height: 100%;
 	background-attachment: fixed;
 	background-position: center;
@@ -19,7 +20,7 @@ body, html {
 }
 
 .parallax2 {
-	background-image: url('https://starcitizen.tools/images/thumb/c/cc/C2_Feature_Style_clouds.jpg/400px-C2_Feature_Style_clouds.jpg');
+	background: url('https://starcitizen.tools/images/thumb/c/cc/C2_Feature_Style_clouds.jpg/400px-C2_Feature_Style_clouds.jpg') repeat fixed 100%;
 	height: 100%;
 	background-attachment: fixed;
 	background-position: center;
