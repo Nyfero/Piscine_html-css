@@ -4,6 +4,8 @@ function create_todo() {
 	console.log(document.cookie);
 
 	var a = prompt("Please enter a TO DO:");
+	console.log(a);
+	
 	
 	if (a)
 	{
@@ -17,6 +19,7 @@ function create_todo() {
 			}
 		}
 		list.appendChild(p);
+		console.log(encodeURIComponent(list.innerHTML));
 		document.cookie = encodeURIComponent(list.innerHTML);
 	}
 	else
@@ -26,7 +29,10 @@ function create_todo() {
 list.innerHTML = decodeURIComponent(document.cookie);
 for (let i = 0; i < list.children.length; i++) {
 	list.children[i].onclick = function() {
-		list.children[i].remove();
+		if (confirm("are you sure ?"))
+		{	
+			list.children[i].remove();
+		}
 		document.cookie = encodeURIComponent(list.innerHTML);
 	}
 }
